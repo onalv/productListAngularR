@@ -32,14 +32,14 @@ export class ProductEditComponent implements OnInit {
     }
 
     constructor(private route: ActivatedRoute,
-                private router: Router,
-                private productService: ProductService,
-                private messageService: MessageService) { }
+        private router: Router,
+        private productService: ProductService,
+        private messageService: MessageService) { }
 
     ngOnInit(): void {
         // Watch for changes to the resolve data
         this.route.data.subscribe(data => {
-            this.onProductRetrieved(data['product']);
+             this.onProductRetrieved(data['product']);
         });
     }
 
@@ -75,7 +75,7 @@ export class ProductEditComponent implements OnInit {
             return this.dataIsValid[path];
         }
         return (this.dataIsValid &&
-        Object.keys(this.dataIsValid).every(d => this.dataIsValid[d] === true));
+            Object.keys(this.dataIsValid).every(d => this.dataIsValid[d] === true));
     }
 
     saveProduct(): void {
