@@ -1,11 +1,11 @@
 
 ## Description
 
-These are the starter files for the Angular Routing course on Pluralsight 
+Product List Application
 
 ## Installation
 
-1) Open a command prompt in the project's root directory (APM)
+1) Open a command prompt in the project's root directory
 
 2) Type: `npm install`
     This installs the dependencies as defined in the package.json file.
