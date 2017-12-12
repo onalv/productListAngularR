@@ -1,5 +1,5 @@
 <div class="panel panel-primary">
-    <div class="panel-heading">
+    <div class="panel-heading" style="background-color: #222;">
         {{pageTitle}}
     </div>
 
@@ -43,7 +43,7 @@
                             <img *ngIf="showImage && product.imageUrl"
                                  [src]="product.imageUrl"
                                  [title]="product.productName | uppercase"
-                                 [style.width.px]="imageWidth" 
+                                 [style.height.px]="imageHeight"
                                  [style.margin.px]="imageMargin">
                         </td>
                         <td><a [routerLink]="[product.id]" 
